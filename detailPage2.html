@@ -4,6 +4,9 @@
 <title>detailPage</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 <style>
   html,body
 {
@@ -146,9 +149,10 @@ footer {
     text-transform: uppercase;
     color: #383838;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
-.size-radio-btn.check{
+.size-radio-btn:hover{
     background: #383838;
     color: #fff;
 }
@@ -188,6 +192,77 @@ footer {
   background-color: #757575;
   color: white;
 }
+@media (min-width: 1200px){
+.container {
+    width: 1248px !important;
+}
+
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.middleTop {
+        margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1600px;
+    min-width: 1024px;
+    background-color: #000000db;
+
+}
+
+.middle-heading {
+    font-family: "font-bold";
+    font-size: 14px;
+    color: #fff;
+    margin-left: 38px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.middle-content {
+    font-size: 12px;
+    color: #777 !important;
+    list-style-type: none;
+    max-width: 210px;
+}
+
+.middleContent-footer .middleTop div {
+    box-sizing: border-box;
+}
+
+.middleBottom {
+    background-color: #000;
+    text-align: center;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 12px 0;
+}
+
+.middleBottomFooter {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #344c55;
+    text-align: left;
+    background-color: #000;
+}
+
+.underLineOnHover{
+  color:#fff;
+}
+ 
+.bottomfooter{
+  background-color: #000;
+}
+
+.copyright{
+  color:#fff;
+}
+
+.address{
+   color: #fff;
+}
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
   section {
@@ -220,16 +295,14 @@ footer {
 
     <p class="product-sub-heading">select type</p>
 
-    <input type="radio" name="size" value="s" checked hidden id="s-size">
-    <label for="s-size" class="size-radio-btn check">s</label>
-    <input type="radio" name="size" value="m" hidden id="m-size">
-    <label for="m-size" class="size-radio-btn">m</label>
-    <input type="radio" name="size" value="l" hidden id="l-size">
-    <label for="l-size" class="size-radio-btn">l</label>
-    <input type="radio" name="size" value="xl" hidden id="xl-size">
-    <label for="xl-size" class="size-radio-btn">xl</label>
-    <input type="radio" name="size" value="xxl" hidden id="xxl-size">
-    <label for="xxl-size" class="size-radio-btn">xxl</label>
+    <input type="radio" name="size" value="a" hidden id="a-size">
+    <label for="a-size" class="size-radio-btn size-radio-btn:hover">a</label>
+    <input type="radio" name="size" value="b" hidden id="b-size">
+    <label for="b-size" class="size-radio-btn size-radio-btn:hover">b</label>
+    <input type="radio" name="size" value="c" hidden id="c-size">
+    <label for="c-size" class="size-radio-btn size-radio-btn:hover">c</label>
+    <input type="radio" name="size" value="d" hidden id="d-size">
+    <label for="d-size" class="size-radio-btn size-radio-btn:hover">d</label>
 <p>
     <button class="btn cartButton">add to cart</button>
     <button class="btn button">buy now</button>
@@ -238,7 +311,109 @@ footer {
 </section>
 
 <footer>
-  <p>Pradita University @2022</p>
+	<div class="middleTop row">
+		<div class="footer-inner">
+		   <div class="col-md-2">
+			  <div class="middle-heading">Policy Info</div>
+			  <ul class="middle-content ">
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Privacy Policy</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Terms of Sale</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Terms of Use</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Report Abuse &amp; Takedown Policy</a></li>
+			  </ul>
+		   </div>
+		   <div class="col-md-2">
+			  <div class="middle-heading">Company</div>
+			  <ul class="middle-content">
+				 <li><a class="underLineOnHover" href="#" data-abc="true">About Us</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Core Values</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Careers</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Blog</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Sitemap</a></li>
+			  </ul>
+	 
+	 
+		   </div>
+		   <div class="col-md-2">
+			  <div class="middle-heading">XBusiness</div>
+			  <ul class="middle-content">
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Shopping App</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Sell on BBBootstrap</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Advertise on BBBootstrap</a></li>
+				 <li><a class="underLineOnHover" href="mailto:mediarelations@BBBootstrap.com" data-abc="true">Media Enquiries</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Be an Affiliate</a></li>
+			  </ul>
+		   </div>
+		   <div class="col-md-2">
+			  <div class="middle-heading">Need Help ?</div>
+			  <ul class="middle-content">
+				 <li><a class="underLineOnHover" href="#" data-abc="true">FAQ</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Contact Us</a></li>
+				 <li><a class="underLineOnHover" href="#" data-abc="true">Online Shopping</a></li>
+			  </ul>
+			  <i class="originalalityfooterIcon footerIconsImg hide"></i>
+		   </div>
+	 
+		   <div class="col-md-4">
+			  <div class="middle-heading" style="margin-left: 0px;">About us</div>
+			   
+			  <span class="address">Plot No A5 ,1st Floor, Complex, Industrial Area, Delhi, 110095</span>
+	 
+			  <div class="">
+				 <h5 style="color: #EF5350;">Social connect</h5>
+				 <img src="https://img.icons8.com/color/24/000000/facebook.png">
+				 <img src="https://img.icons8.com/office/20/000000/instagram-new.png">
+				 <img src="https://img.icons8.com/color/24/000000/twitter-squared.png">
+				 
+	 
+			  </div>
+		   </div>
+		   
+		</div>
+	 </div>
+		
+			 
+			  <div class="middleBottom clearfix">
+	 
+				 <div class="row">
+					<div class="col-md-2"><img src="https://img.icons8.com/ultraviolet/40/000000/security-ssl.png"></div>
+					<div class="col-md-2"><img src="https://img.icons8.com/dusk/40/000000/card-security.png"></div>
+					<div class="col-md-2"><img src="https://img.icons8.com/office/40/000000/remove-key.png"></div>
+					<div class="col-md-2"><img src="https://img.icons8.com/color/40/000000/lets-encrypt.png"></div>
+					<div class="col-md-2"><img src="https://img.icons8.com/office/40/000000/hips.png"></div>
+					<div class="col-md-2"><img src="https://img.icons8.com/cotton/40/000000/cloud-lock.png"></div>
+	 
+					
+				 </div>
+	 
+		   
+			  </div>
+	 
+			  <div class="clearfix bottomfooter">
+				<div class="container">
+					<div class="row">
+					<div class="col-md-6" style="margin-top:10px;">
+					   <span class="copyright">Copyright &copy; 2019, BBBootstrap.com All Rights Reserved</span>
+					</div>
+	 
+					
+	 
+					<div class="col-md-6">
+					   <div class="pull-right">
+						   <img class="pull-right" src="https://img.icons8.com/officel/40/000000/mastercard.png">
+						   <img class="pull-right" src="https://img.icons8.com/color/40/000000/visa.png">
+						   <img class="pull-right" src="https://img.icons8.com/color/40/000000/amex.png">
+						   <img class="pull-right" src="https://img.icons8.com/color/40/000000/discover.png">
+	 
+					   </div>
+					   
+					</div>
+					
+	 
+					
+				 </div>
+	 
+				</div>
 </footer>
 
 </body>
