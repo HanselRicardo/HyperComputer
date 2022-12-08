@@ -26,8 +26,13 @@ body {
 }
 
 a {
-  color: #41307c;
-  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #428bca !important;
 }
 
 /* -------------------------------- 
@@ -35,6 +40,20 @@ a {
 Main Components 
 
 -------------------------------- */
+
+.mix {
+  background: white;
+  text-align: center;
+  font-weight: 1000;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.mix:hover {
+  transform: scale(1.1);
+}
+
+
 .cd-header {
   position: relative;
   height: 150px;
