@@ -38,7 +38,7 @@ Main Components
 .cd-header {
   position: relative;
   height: 150px;
-  background-color: #00a0da;
+  background-image:linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
 .cd-header h1 {
   color: #ffffff;
