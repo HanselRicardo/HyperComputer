@@ -47,10 +47,15 @@ Main Components
   font-weight: 1000;
   padding-bottom: 20px;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .mix:hover {
   transform: scale(1.1);
+}
+
+.borderradius {
+  border-radius: 10px;
 }
 
 
