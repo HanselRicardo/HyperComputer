@@ -277,11 +277,12 @@ xgallery
 
 -------------------------------- */
 .cd-gallery {
-  padding: 26px 5%;
+  padding: 10px 5%;
   width: 100%;
 }
 .cd-gallery li {
   margin-bottom: 1.6em;
+  border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   display: none;
 }
@@ -293,7 +294,9 @@ xgallery
 }
 .cd-gallery img {
   display: block;
-  width: 100%;
+  width: 300px;
+  margin: auto;
+  height: auto;
 }
 .cd-gallery .cd-fail-message {
   display: none;
