@@ -289,7 +289,7 @@ xgallery
 }
 .cd-gallery img {
   display: block;
-  width: 300px;
+  width: 70%;
   margin: auto;
   height: auto;
 }
